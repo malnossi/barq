@@ -1,0 +1,34 @@
+[project]
+name = "barq"
+version = "0.0.1"
+authors = [
+  { name="Mohamed AL NOSSIRAT", email="mohamed.w.nossirat@gmail.com" },
+]
+description = "Fast object serialization"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/malnossi/barq"
+Issues = "https://github.com/malnossi/barq/issues"
+
+[project.tool.ruff]
+select = ["I004"]
+
+[project.tool.ruff.lint.isort]
+force-single-line = true
+force-sort-within-sections = true
+force-wrap-aliases = true
+combine-as-imports = true
+length-sort = true
+length-sort-straight = true
+lines-after-imports = 1
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
